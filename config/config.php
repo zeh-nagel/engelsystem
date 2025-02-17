@@ -334,9 +334,9 @@ return [
     'enable_full_name'        => (bool) env('ENABLE_FULL_NAME', true),
 
     // Show a users first name and last name instead of username
-    // xoxo
-    'display_full_name'  => env('DISPLAY_FULL_NAME', false)
-        && env('ENABLE_FULL_NAME', false),
+    // xoxo - vivi/nora?
+    'display_full_name'  => env('DISPLAY_FULL_NAME', true)
+        && env('ENABLE_FULL_NAME', true),
 
     // Enable displaying the pronoun fields
     'enable_pronoun'          => (bool) env('ENABLE_PRONOUN', true),
