@@ -406,7 +406,7 @@ return [
 
     // The default locale to use
     // xoxo
-    'default_locale'          => env('DEFAULT_LOCALE', 'en_US'),
+    'default_locale'          => env('DEFAULT_LOCALE', 'de_DE'),
 
     // Available T-Shirt sizes
     // To disable a t-shirt size in config.php, you can set its value to null
