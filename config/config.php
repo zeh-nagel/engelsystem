@@ -255,7 +255,7 @@ return [
 
     // Redirect to this site after logging in or when clicking the page name xoxo
     // Must be one of news, meetings, user_shifts, angeltypes, questions
-    'home_site'               => env('HOME_SITE', 'news'),
+    'home_site'               => env('HOME_SITE', 'user_shifts'),
 
     // Number of News shown on one site and for feed readers (minimum 1)
     'display_news'            => env('DISPLAY_NEWS', 10),
