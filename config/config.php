@@ -320,7 +320,7 @@ return [
 
     // Whether the DECT field should be enabled
     // xoxo
-    'enable_dect'             => (bool) env('ENABLE_DECT', true),
+    'enable_dect'             => (bool) env('ENABLE_DECT', false),
 
     // Whether the mobile number will be shown to other users
     'enable_mobile_show'      => (bool) env('ENABLE_MOBILE_SHOW', false),
