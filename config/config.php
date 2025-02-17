@@ -266,10 +266,11 @@ return [
     // URL to external registration page, linked from login page
     'external_registration_url'   => env('EXTERNAL_REGISTRATION_URL'),
 
-    // Required user fields xoxo - wollen wir firstname evtl einfach requiren? brauchen wir t-shirt-größe? (nora!)
+    // Required user fields 
+    // xoxo - wollen wir firstname evtl einfach requiren? brauchen wir t-shirt-größe? (nora!)
     'required_user_fields' => [
         'pronoun'            => (bool) env('PRONOUN_REQUIRED', false),
-        'firstname'          => (bool) env('FIRSTNAME_REQUIRED', false), 
+        'firstname'          => (bool) env('FIRSTNAME_REQUIRED', true), 
         'lastname'           => (bool) env('LASTNAME_REQUIRED', false),
         'tshirt_size'        => (bool) env('TSHIRT_SIZE_REQUIRED', true),
         'mobile'             => (bool) env('MOBILE_REQUIRED', false),
@@ -329,7 +330,8 @@ return [
     'username_regex' => (string) env('USERNAME_REGEX', '/([^\p{L}\p{N}_.-]+)/ui'),
 
     // Enable first name and last name
-    'enable_full_name'        => (bool) env('ENABLE_FULL_NAME', false),
+    // xoxo – we need this to enable first name a srequired field
+    'enable_full_name'        => (bool) env('ENABLE_FULL_NAME', true),
 
     // Show a users first name and last name instead of username
     // xoxo
