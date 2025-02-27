@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem 2.0\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: de_DE\n"
+
+msgid "auth.not-found"
+msgstr ""
+"Es wurde kein User gefunden oder das Passwort ist falsch. Probiere es bitte noch einmal. Wenn das Problem "
+"weiterhin besteht, melde dich im Himmel."
+
+msgid "validation.password.required"
+msgstr "Bitte gib ein Passwort an."
+
+msgid "validation.password.length"
+msgstr "Das angegebene Passwort ist zu kurz."
+
+msgid "validation.login.required"
+msgstr "Bitte gib einen Loginnamen an."
+
+msgid "validation.pronoun.required"
+msgstr "Bitte gebe dein Pronomen an."
+
+msgid "validation.firstname.required"
+msgstr "Bitte gebe deinen Vornamen an."
+
+msgid "validation.lastname.required"
+msgstr "Bitte gebe deinen Nachnamen an."
+
+msgid "validation.mobile.required"
+msgstr "Bitte gebe deine Handynummer an."
+
+msgid "validation.dect.required"
+msgstr "Bitte gebe deine DECT-Nummer an."
+
+msgid "validation.username.required"
+msgstr "Bitte gebe deinen Nick an."
+
+msgid "validation.username.username"
+msgstr ""
+"Bitte gebe einen gültigen Nick ein: "
+"Verwende bis zu 24 Buchstaben, Zahlen oder verbindende Schriftzeichen (.-_) für deinen Nick."
+
+msgid "validation.email.required"
+msgstr "Bitte gib eine E-Mail-Adresse an."
+
+msgid "validation.email.email"
+msgstr "Die E-Mail-Adresse ist nicht gültig."
+
+msgid "validation.new_password.length"
+msgstr "Dein neues Passwort ist zu kurz."
+
+msgid "validation.password.confirmed"
+msgstr "Deine Passwörter stimmen nicht überein."
+
+msgid "validation.password_confirmation.required"
+msgstr "Du musst dein Passwort bestätigen."
+
+msgid "validation.tshirt_size.required"
+msgstr "Bitte wähle deine T-Shirt-Größe aus."
+
+msgid "validation.tshirt_size.shirtSize"
+msgstr "Bitte wähle eine gültige T-Shirt-Größe aus."
+
+msgid "validation.planned_arrival_date.required"
+msgstr "Bitte gebe dein geplantes Ankunftsdatum an."
+
+msgid "validation.planned_arrival_date.min"
+msgstr "Das geplante Ankunftsdatum darf nicht vor Aufbaubeginn liegen."
+
+msgid "validation.planned_arrival_date.between"
+msgstr "Das geplante Ankunftsdatum muss zwischen Aufbaubeginn und Abbauende liegen."
+
+msgid "schedule.edit.success"
+msgstr "Das Programm wurde erfolgreich konfiguriert."
+
+msgid "schedule.import.request-error"
+msgstr "Das Programm konnte nicht abgerufen werden."
+
+msgid "schedule.import.read-error"
+msgstr "Das Programm konnte nicht gelesen werden."
+
+msgid "schedule.import.success"
+msgstr "Das Programm wurde erfolgreich importiert."
+
+msgid "schedule.delete.success"
+msgstr "Das Programm wurde erfolgreich gelöscht."
+
+msgid "shifts.filter.toggle"
+msgstr "Filter verstecken/anzeigen"
+
+msgid "validation.schedule-url.required"
+msgstr "Bitte gib eine Programm URL an."
+
+msgid "validation.schedule-url.url"
+msgstr "Die Programm URL muss eine URL sein."
+
+msgid "validation.shift-type.required"
+msgstr "Der Schichttyp ist erforderlich."
+
+msgid "validation.shift-type.int"
+msgstr "Der Schichttyp muss eine Zahl sein."
+
+msgid "validation.minutes-before.int"
+msgstr "Die Minuten vor dem Talk müssen eine Zahl sein."
+
+msgid "validation.minutes-after.int"
+msgstr "Die Minuten nach dem Talk müssen eine Zahl sein."
+
+msgid "news.comment.success"
+msgstr "Kommentar gespeichert."
+
+msgid "news.comment-delete.success"
+msgstr "Kommentar erfolgreich gelöscht."
+
+msgid "news.edit.duplicate"
+msgstr "Diese News wurde bereits erstellt."
+
+msgid "news.edit.success"
+msgstr "News erfolgreich aktualisiert."
+
+msgid "news.delete.success"
+msgstr "News erfolgreich gelöscht."
+
+msgid "oauth.invalid-state"
+msgstr "Ungültiger OAuth-Status"
+
+msgid "oauth.provider-error"
+msgstr "Login-Provider-Fehler"
+
+msgid "oauth.already-connected"
+msgstr "Dieser Account wurde bereits mit einem anderen User verbunden!"
+
+msgid "oauth.connected"
+msgstr "Login-Provider verbunden!"
+
+msgid "oauth.disconnected"
+msgstr "Login-Provider getrennt!"
+
+msgid "oauth.not-found"
+msgstr "Account nicht gefunden"
+
+msgid "oauth.provider-not-found"
+msgstr "OAuth-Provider nicht gefunden"
+
+msgid "oauth.invalid_request"
+msgstr "Der OAuth-Provider lehnt die Anfrage aufgrund eines ungültigen oder fehlenden Parameters ab."
+
+msgid "oauth.unauthorized_client"
+msgstr "Authorisierung als Client beim OAuth-Provider ungültig."
+
+msgid "oauth.access_denied"
+msgstr "Der Nutzer oder der OAuth-Provider hat die Anfrage abgelehnt."
+
+msgid "oauth.unsupported_response_type"
+msgstr "Der OAuth-Provider unterstützt die gewählte Methode zum Erhalt eines Auth-Codes nicht."
+
+msgid "oauth.invalid_scope"
+msgstr "Der angefragte Scope ist ungültig, unbekannt oder fehlerhaft."
+
+msgid "oauth.server_error"
+msgstr "Der OAuth-Provider ist aufgrund eines unerwarteten Fehlers nicht in der Lage, die Anfrage zu erfüllen"
+
+msgid "oauth.temporarily_unavailable"
+msgstr "Der OAuth-Provider ist aufgrund Überlastung oder Wartung temporär nicht in der Lage, die Anfrage zu erfüllen"
+
+msgid "settings.profile.planned_arrival_date.invalid"
+msgstr "Bitte gib Dein geplantes Ankunftsdatum an. "
+"Es sollte nach dem Aufbaubeginn und vor dem Abbauende liegen."
+
+msgid "settings.profile.planned_departure_date.invalid"
+msgstr "Bitte gib Dein geplantes Abreisedatum an, damit wir ein Gefühl für die Abbauplanung bekommen. "
+"Es sollte nach dem Aufbaubeginn und vor dem Abbauende liegen."
+
+msgid "settings.success"
+msgstr "Einstellungen gespeichert."
+
+msgid "settings.sessions.delete_success"
+msgstr "Sitzung erfolgreich gelöscht."
+
+msgid "settings.api.key_reset_success"
+msgstr "API Key erfolgreich zurückgesetzt."
+
+msgid "faq.delete.success"
+msgstr "FAQ Eintrag erfolgreich gelöscht."
+
+msgid "faq.edit.success"
+msgstr "FAQ Eintrag erfolgreich aktualisiert."
+
+msgid "question.delete.success"
+msgstr "Frage erfolgreich gelöscht."
+
+msgid "question.add.success"
+msgstr "Frage erstellt."
+
+msgid "question.edit.success"
+msgstr "Frage erfolgreich bearbeitet."
+
+msgid "tag.edit.duplicate"
+msgstr "Ein Tag mit dem Namen existiert bereits!"
+
+msgid "tag.edit.success"
+msgstr "Der Tag wurde erfolgreich aktualisiert."
+
+msgid "tag.delete.success"
+msgstr "Tag erfolgreich gelöscht."
+
+msgid "notification.news.new"
+msgstr "Neue News: %s"
+
+msgid "notification.news.new.introduction"
+msgstr "Es gibt eine neue News: %1$s"
+
+msgid "notification.news.new.text"
+msgstr "Du kannst sie dir unter %3$s anschauen."
+
+msgid "notification.news.updated"
+msgstr "Aktualisierte News: %s"
+
+msgid "notification.messages.new"
+msgstr "Neue private Nachricht von %s"
+
+msgid "notification.messages.new.text"
+msgstr "Du hast eine neue private Nachricht von \"%s\" bekommen. Du kannst sie dir unter %s anschauen."
+
+msgid "notification.angeltype.confirmed"
+msgstr "Du wurdest als %s bestätigt"
+
+msgid "notification.angeltype.confirmed.introduction"
+msgstr "Du wurdest von einem Supporter als %1$s bestätigt."
+
+msgid "notification.angeltype.confirmed.text"
+msgstr "Eine Beschreibung findest du unter %2$s"
+
+msgid "notification.angeltype.added"
+msgstr "Du wurdest als %s hinzugefügt"
+
+msgid "notification.angeltype.added.introduction"
+msgstr "Du wurdest von einem Supporter als %1$s hinzugefügt."
+
+msgid "notification.angeltype.added.text"
+msgstr "Eine Beschreibung findest du unter %2$s"
+
+msgid "notification.shift.deleted"
+msgstr "Deine Schicht wurde gelöscht"
+
+msgid "notification.shift.deleted.introduction"
+msgstr "Eine deiner Schichten wurde gelöscht:"
+
+msgid "notification.shift.deleted.worklog"
+msgstr ""
+"Da die gelöschte Schicht bereits vergangen ist, "
+"haben wir einen entsprechenden Arbeitseinsatz hinzugefügt."
+
+msgid "notification.shift.updated"
+msgstr "Deine Schicht wurde aktualisiert"
+
+msgid "notification.shift.no_next_found"
+msgstr "Es wurde keine verfügbare Schicht gefunden."
+
+msgid "user.edit.success"
+msgstr "Benutzer erfolgreich bearbeitet."
+
+msgid "message.delete.success"
+msgstr "Nachricht erfolgreich gelöscht."
+
+msgid "worklog.add.success"
+msgstr "Arbeitseinsatz erfolgreich angelegt."
+
+msgid "worklog.edit.success"
+msgstr "Arbeitseinsatz erfolgreich bearbeitet."
+
+msgid "worklog.delete.success"
+msgstr "Arbeitseinsatz erfolgreich gelöscht."
+
+msgid "location.edit.success"
+msgstr "Ort erfolgreich bearbeitet."
+
+msgid "location.delete.success"
+msgstr "Ort erfolgreich gelöscht."
+
+msgid "shifttype.edit.success"
+msgstr "Schichttyp erfolgreich bearbeitet."
+
+msgid "shifttype.delete.success"
+msgstr "Schichttyp erfolgreich gelöscht."
+
+msgid "validation.name.exists"
+msgstr "Der Name wird bereits verwendet."
+
+msgid "registration.disabled"
+msgstr "Die Registrierung ist deaktiviert."
+
+msgid "registration.successful.supporter"
+msgstr "Registrierung erfolgreich."
+
+msgid "registration.successful"
+msgstr "Registrierung erfolgreich. Du kannst dich jetzt anmelden!"
+
+msgid "shifts.history.delete.success"
+msgstr "Schichten erfolgreich gelöscht."
+
+msgid "config.event"
+msgstr "Event"
+
+msgid "config.name"
+msgstr "Event Name"
+
+msgid "config.name.info"
+msgstr "Der Event Name wird auf der Startseite angezeigt."
+
+msgid "config.welcome_msg"
+msgstr "Event Willkommens-Nachricht"
+
+msgid "config.welcome_msg.info"
+msgstr "Die Willkommens-Nachricht wird nach der Registrierung angezeigt. Du kannst Markdown benutzen."
+
+msgid "config.buildup_start"
+msgstr "Aufbau Datum"
+
+msgid "config.event_start"
+msgstr "Event Start Datum"
+
+msgid "config.event_end"
+msgstr "Event Ende Datum"
+
+msgid "config.teardown_end"
+msgstr "Abbau Ende Datum"
+
+msgid "validation.event_start.after"
+msgstr "Event Start muss nach dem Aufbau liegen."
+
+msgid "validation.event_end.after"
+msgstr "Event Ende muss nach dem Event Start liegen."
+
+msgid "validation.teardown_end.after"
+msgstr "Abbau Ende muss nach dem Event Ende liegen."
