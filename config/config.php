@@ -21,7 +21,7 @@ return [
     'maintenance'             => (bool) env('MAINTENANCE', false),
 
     // Application name (not the event name) xoxo
-    'app_name'                => env('APP_NAME', 'Engelsystem'),
+    'app_name'                => env('APP_NAME', 'Wutzrock Schichten'),
 
     // Set to development to enable debugging messages xoxo - what does "debugging messages" mean in this context?
     'environment'             => env('ENVIRONMENT', 'production'),
