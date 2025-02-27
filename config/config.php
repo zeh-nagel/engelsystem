@@ -51,14 +51,14 @@ return [
         'faq.faq' => [env('FAQ_URL', '/faq'), 'faq.view'],
 
         // Contact email address, linked on every page xoxo
-        'Contact' => env('CONTACT_EMAIL', 'mailto:ticket@c3heaven.de'),
+        'Contact' => env('CONTACT_EMAIL', 'mailto:info@wutzrock.de'),
     ],
 
     // Other ways to ask the heaven xoxo
     // Multiple contact options / links are possible, analogue to footer_items
     'contact_options' => [
         // E-mail address
-        'general.email' => env('CONTACT_EMAIL', 'mailto:ticket@c3heaven.de'),
+        'general.email' => env('CONTACT_EMAIL', 'mailto:info@wutzrock.de'),
     ],
 
     // Additional text displayed on the FAQ page, rendered as markdown
