@@ -169,19 +169,19 @@ msgid "form.recover"
 msgstr "Wiederherstellen"
 
 msgid "Angel type %s deleted."
-msgstr "Helfer*innentyp %s gelöscht."
+msgstr "Team %s gelöscht."
 
 msgid "Delete angel type %s"
-msgstr "Lösche Helfer*innentyp %s"
+msgstr "Lösche Team %s"
 
 msgid "Please check the name. Maybe it already exists."
 msgstr "Bitte überprüfe den Namen. Vielleicht ist er bereits vergeben."
 
 msgid "Angel type saved."
-msgstr "Helfer*innentyp wurde gespeichert."
+msgstr "Team wurde gespeichert."
 
 msgid "Create angel type"
-msgstr "Helfer*innentyp erstellen"
+msgstr "Team erstellen"
 
 msgid "Edit %s"
 msgstr "%s bearbeiten"
@@ -214,13 +214,13 @@ msgid "%s has been subscribed to the shift."
 msgstr "%s wurde in die Schicht eingetragen."
 
 msgid "User is not in angel type."
-msgstr "User ist nicht im Helfer*innentyp."
+msgstr "User ist nicht im Team."
 
 msgid "This shift is already occupied."
 msgstr "Die Schicht ist schon voll."
 
 msgid "You need be accepted member of the angel type."
-msgstr "Du musst bestätigtes Mitglied des Helfer*innentyp  sein."
+msgstr "Du musst bestätigtes Mitglied des Teams sein."
 
 msgid "This shift collides with one of your shifts."
 msgstr "Diese Schicht kollidiert mit deinen Schichten."
@@ -299,38 +299,38 @@ msgstr "Schicht konnte nicht gefunden werden."
 
 msgid "There are unconfirmed angels in %d angel type. Angel type that needs approval:"
 msgid_plural "There are unconfirmed angels in %d angel types. Angel types that need approvals:"
-msgstr[0] "Es gibt nicht freigeschaltete Helfer*innen in %d Helfer*innentypen! Helfer*innentyp der bestätigt werden muss:"
-msgstr[1] "Es gibt nicht freigeschaltete Helfer*innen in %d Helfer*innentypen! Helfer*innentypen die bestätigt werden müssen:"
+msgstr[0] "Es gibt nicht freigeschaltete Helfer*innen in %d Teams! Team, das bestätigt werden muss:"
+msgstr[1] "Es gibt nicht freigeschaltete Helfer*innen in %d Teams! Teams die bestätigt werden müssen:"
 
 msgid "You are not allowed to delete all users for this angel type."
-msgstr "Du darfst nicht alle Benutzer von diesem Helfer*innentyp entfernen."
+msgstr "Du darfst nicht alle Benutzer von diesem Team entfernen."
 
 msgid "Denied all users for angel type %s."
-msgstr "Alle Benutzer mit Helfer*innentyp %s abgelehnt."
+msgstr "Alle Benutzer aus dem Team %s abgelehnt."
 
 msgid "Deny all users"
 msgstr "Alle Benutzer ablehnen"
 
 msgid "You are not allowed to confirm all users for this angel type."
-msgstr "Du darfst nicht alle Benutzer für diesen Helfer*innentyp freischalten."
+msgstr "Du darfst nicht alle Benutzer für dieses Team freischalten."
 
 msgid "Confirmed all users for angel type %s."
-msgstr "Alle Benutzer für Helfer*innentyp %s freigeschaltet."
+msgstr "Alle Benutzer für Team %s freigeschaltet."
 
 msgid "Confirm all users"
 msgstr "Alle Benutzer bestätigen"
 
 msgid "You are not allowed to confirm this users angel type."
-msgstr "Du darfst diesen Benutzer nicht für diesen Helfer*innentyp freischalten."
+msgstr "Du darfst diesen Benutzer nicht für dieses Team freischalten."
 
 msgid "%s confirmed for angel type %s."
-msgstr "%s für Helfer*innentyp %s freigeschaltet."
+msgstr "%s für Team %s freigeschaltet."
 
 msgid "Confirm angel type for user"
-msgstr "Helfer*innentyp für Benutzer bestätigen"
+msgstr "Team für Benutzer bestätigen"
 
 msgid "You are not allowed to delete this users angel type."
-msgstr "Du darfst diesen Benutzer nicht von diesem Helfer*innentyp entfernen."
+msgstr "Du darfst diesen Benutzer nicht von diesem Team entfernen."
 
 msgid "User \"%s\" removed from \"%s\"."
 msgstr "Benutzer \"%s\" von \"%s\" entfernt."
@@ -342,7 +342,7 @@ msgid "You successfully left \"%2$s\"."
 msgstr "Du hast erfolgreich \"%2$s\" verlassen."
 
 msgid "Leave angel type"
-msgstr "Helfer*innentyp verlassen"
+msgstr "Team verlassen"
 
 msgid "No supporter update given."
 msgstr "Kein Update für Supporterrechte gegeben."
@@ -363,7 +363,7 @@ msgid "User %s added to %s."
 msgstr "Benutzer %s zu %s hinzugefügt."
 
 msgid "Add user to angel type"
-msgstr "Benutzer zu Helfer*innentyp hinzufügen"
+msgstr "Benutzer zu Team hinzufügen"
 
 msgid "You are already a %s."
 msgstr "Du bist bereits %s."
@@ -576,7 +576,7 @@ msgid "Free angels"
 msgstr "Freie Helfer*innen"
 
 msgid "Angel type"
-msgstr "Helfer*innentyp"
+msgstr "Team"
 
 msgid "shift.next"
 msgstr "Nächste Schicht"
@@ -753,8 +753,8 @@ msgid ""
 "The administration has not configured any angel types yet - or you are not "
 "subscribed to any angel type."
 msgstr ""
-"Die Administratoren haben noch keine Helfer*innentypen konfiguriert - oder Du hast "
-"noch keine Helfer*innentypen ausgewählt."
+"Die Administratoren haben noch keine Teams konfiguriert - oder Du hast "
+"dich noch keinem Teams angeschlossen."
 
 msgid "occupied"
 msgstr "belegt"
@@ -772,7 +772,7 @@ msgid ""
 "The tasks shown here are influenced by the angel types you joined already!"
 msgstr ""
 "Die Schichten, die hier angezeigt werden, sind von Deinen Einstellungen "
-"(Helfer*innentypen/Aufgaben) abhängig!"
+"(Team/Aufgaben) abhängig!"
 
 msgid "Filter"
 msgstr "Filter"
@@ -835,14 +835,14 @@ msgid "Member"
 msgstr "Mitglied"
 
 msgid "Do you want to delete angel type %s?"
-msgstr "Möchtest Du den Helfer*innentyp %s löschen?"
+msgstr "Möchtest Du das Team %s löschen?"
 
 msgid "angeltypes.restricted"
 msgstr "Benötigt Einführung"
 
 msgid "angeltypes.restricted.info"
 msgstr ""
-"Helfer*innentypen, welche eine Einführung benötigen, müssen von einem Supporter freigeschaltet werden "
+"Teams, welche eine Einführung benötigen, müssen von einem Supporter freigeschaltet werden "
 "(double-opt-in)."
 
 msgid "shift.self_signup"
@@ -852,10 +852,10 @@ msgid "shift.self_signup.allowed"
 msgstr "Schichten selbst eintragen erlaubt"
 
 msgid "angeltypes.shift.self_signup.info"
-msgstr "Helfer*innentypen, welche Schichten selbst eintragen erlaubt haben, "
+msgstr "Teams, welche Schichten selbst eintragen erlaubt haben, "
 "erlauben Helfer*innen sich selbst in ihre Schichten einzutragen, "
 "ist Schichten selbst eintragen nicht erlaubt können nur Supporter "
-"oder Admins Helfer*innen in die Schichten des Helfer*innentyps eintragen."
+"oder Admins Helfer*innen in die Schichten des Teams eintragen."
 
 
 msgid "Requires driver license"
@@ -874,23 +874,23 @@ msgid "My driving license"
 msgstr "Meine Führerschein-Infos"
 
 msgid "angeltype.ifsg.required.info.preview"
-msgstr "Dieser Helfer*innentyp benötigt eine Gesundheitsbelehrung."
+msgstr "In diesem Team benötigst du eine Gesundheitsbelehrung."
 
 msgid "angeltype.driving_license.required.info.preview"
-msgstr "Dieser Helfer*innentyp benötigt Führerschein-Infos."
+msgstr "In diesem Team benötigen wir deine Führerschein-Infos."
 
 msgid ""
 "This angel type requires a driver license. Please enter your driver license "
 "information!"
 msgstr ""
-"Dieser Helfer*innentyp benötigt Führerschein-Infos. Bitte trage Deine Führerschein-"
+"Mitglieder dieses Teams benötigen Führerschein-Infos. Bitte trage Deine Führerschein-"
 "Infos ein!"
 
 msgid ""
 "You are unconfirmed for this angel type. Please go to the introduction for %s "
 "to get confirmed."
 msgstr ""
-"Du bist noch nicht für diesen Helfer*innentyp bestätigt. Bitte gehe zur Einführung "
+"Du bist noch nicht für dieses Team bestätigt. Bitte gehe zur Einführung "
 "für %s um bestätigt zu werden."
 
 msgid "Confirm"
@@ -957,7 +957,7 @@ msgid "Help needed"
 msgstr "Hilfe benötigt"
 
 msgid "Other angel type needed / collides with my shifts"
-msgstr "Andere Helfer*innentypen benötigt / kollidiert mit meinen Schichten"
+msgstr "Andere Teams benötigt / kollidiert mit meinen Schichten"
 
 msgid "Shift is full"
 msgstr "Schicht ist voll"
@@ -1387,7 +1387,7 @@ msgid "schedule.shift-type"
 msgstr "Schichttyp"
 
 msgid "schedule.needed-from-shift-type"
-msgstr "Helfer*innentypen vom Schichttyp laden (sonst vom Ort)"
+msgstr "Teams vom Schichttyp laden (sonst vom Ort)"
 
 msgid "schedule.minutes-before"
 msgstr "Minuten vor Talk beginn hinzufügen"
@@ -1591,7 +1591,7 @@ msgid "settings.profile.shirt.link"
 msgstr "Mehr Informationen"
 
 msgid "settings.profile.angeltypes.info"
-msgstr "Du kannst deine Helfer*innentypen <a href=\"%s\">auf der Helfer*innentypen-Seite</a> verwalten."
+msgstr "Du kannst deine Teams <a href=\"%s\">auf der Teams-Seite</a> verwalten."
 
 msgid "profile.my_shifts"
 msgstr "Meine Schichten"
@@ -1720,15 +1720,15 @@ msgid "angeltype.ifsg.own"
 msgstr "Meine Gesundheitsbelehrung"
 
 msgid "angeltype.ifsg.required.info"
-msgstr "Dieser Helfer*innentyp benötigt eine Gesundheitsbelehrung. Bitte trage deine Gesundheitsbelehrung ein!"
+msgstr "In diesem Team benötigst du eine Gesundheitsbelehrung. Bitte trage deine Gesundheitsbelehrung ein!"
 
 msgid "angeltype.ifsg.required.info.here"
-msgstr "Dieser Helfer*innentypen benötigt eine Gesundheitsbelehrung. "
+msgstr "DIn diesem Team benötigst du eine Gesundheitsbelehrung. "
 "Bitte trage deine Gesundheitsbelehrung hier ein: %s"
 
 msgid "angeltype.driving_license.required.info.here"
 msgstr ""
-"Du bist einem Helfer*innentyp beigetreten, der Führerschein-Infos benötigt. "
+"Du bist einem Team beigetreten, der Führerschein-Infos benötigt. "
 "Bitte trage Deine Führerschein-Infos hier ein: %s."
 
 msgid "ifsg.info"
@@ -1917,7 +1917,7 @@ msgid "worklog.delete.info"
 msgstr "Möchtest du den Arbeitseinsatz von %s wirklich löschen?"
 
 msgid "angeltypes.angeltypes"
-msgstr "Helfer*innentypen"
+msgstr "Teams"
 
 msgid "angeltypes.about"
 msgstr "Teams-/Aufgabenbeschreibung"
@@ -1927,7 +1927,7 @@ msgstr "Hier findest Du die Liste der Teams und ihrer Aufgaben. Wenn Du weitere 
 "schaue in den <a href=\"%s\">FAQ</a> nach."
 
 msgid "angeltypes.restricted.hint"
-msgstr "Dieser Helfer*innentyp benötigt eine Einweisung bei einem Einführungstreffen. "
+msgstr "In diesem Team benötigst dueine Einweisung bei einem Einführungstreffen. "
 "Weitere Informationen findest du möglicherweise in der Beschreibung."
 
 msgid "angeltypes.can-change-later"
@@ -1937,8 +1937,8 @@ msgid "angeltypes.hide_on_shift_view"
 msgstr "Auf Schicht-Ansicht ausblenden"
 
 msgid "angeltypes.hide_on_shift_view.info"
-msgstr "Wenn ausgewählt, können nur Admins und Mitglieder des Helfer*innentyps auf der "
-"Schicht Seite die Filteroption für diesen Helfer*innentyp sehen."
+msgstr "Wenn ausgewählt, können nur Admins und Mitglieder des Teams auf der "
+"Schicht Seite die Filteroption für dieses Team sehen."
 
 msgid "location.location"
 msgstr "Ort"
@@ -2087,7 +2087,7 @@ msgid "admin_shifts.no_shifttypes"
 msgstr "Es wurde noch kein Schichttyp erstellt. Ohne können keine Schichten erstellt werden."
 
 msgid "admin_shifts.no_angeltypes"
-msgstr "Es wurde noch kein Helfer*innentyp erstellt. Ohne können keine Schichten erstellt werden."
+msgstr "Es wurde noch kein Team erstellt. Ohne können keine Schichten erstellt werden."
 
 msgid "shift.sign_out.hint"
 msgstr "Du kannst dich bis %s Stunden vor dem Start der Schicht austragen. "
