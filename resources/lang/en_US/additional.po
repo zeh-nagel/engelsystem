@@ -10,7 +10,7 @@ msgstr ""
 "Language: en_US\n"
 
 msgid "auth.not-found"
-msgstr "No user was found or password is wrong. Please try again. If you are still having problems, ask Heaven."
+msgstr "No user was found or password is wrong. Please try again. If you are still having problems, ask the Knotenpunkt."
 
 msgid "validation.password.required"
 msgstr "The password is required."
