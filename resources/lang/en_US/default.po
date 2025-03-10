@@ -173,7 +173,7 @@ msgid "schedule.shift-type"
 msgstr "Shift type"
 
 msgid "schedule.needed-from-shift-type"
-msgstr "Load angel types from shift type (else from location)"
+msgstr "Load teams from shift type (else from location)"
 
 msgid "schedule.minutes-before"
 msgstr "Add minutes before talk begins"
@@ -382,7 +382,7 @@ msgid "settings.profile.shirt.link"
 msgstr "More information"
 
 msgid "settings.profile.angeltypes.info"
-msgstr "You can manage your angel types <a href=\"%s\">on the angel types page</a>."
+msgstr "You can manage your teams <a href=\"%s\">on the teams page</a>."
 
 msgid "profile.my_shifts"
 msgstr "My shifts"
@@ -511,22 +511,22 @@ msgid "angeltype.ifsg.own"
 msgstr "My health instruction"
 
 msgid "angeltype.ifsg.required.info.preview"
-msgstr "This angel type requires a health instruction."
+msgstr "This team requires a health instruction."
 
 msgid "angeltype.ifsg.required.info"
-msgstr "This angel type requires a health instruction. Please enter your health instruction information!"
+msgstr "This team requires a health instruction. Please enter your health instruction information!"
 
 msgid "angeltype.ifsg.required.info.here"
-msgstr "You joined an angel type which requires a health instruction. "
+msgstr "You joined a team which requires a health instruction. "
 "Please edit your health instruction information here: %s."
 
 msgid "angeltype.driving_license.required.info.here"
 msgstr ""
-"You joined an angel type which requires a driving license. "
+"You joined a team which requires a driving license. "
 "Please edit your driving license information here: %s."
 
 msgid "angeltype.driving_license.required.info.preview"
-msgstr "This angel type requires a driver's license."
+msgstr "This team requires a driver's license."
 
 msgid "ifsg.info"
 msgstr "Health instruction information"
@@ -711,7 +711,7 @@ msgid "worklog.delete.info"
 msgstr "Do you really want to delete the work log for %s?"
 
 msgid "angeltypes.angeltypes"
-msgstr "Angel types"
+msgstr "Teams"
 
 msgid "angeltypes.about"
 msgstr "Teams-/Job description"
@@ -724,19 +724,19 @@ msgid "angeltypes.restricted"
 msgstr "Requires introduction"
 
 msgid "angeltypes.restricted.info"
-msgstr "Angel types which require introduction can only be used by an angel "
+msgstr "Teams which require introduction can only be used by an angel "
 "if enabled by a supporter (double opt-in)."
 
 msgid "angeltypes.restricted.hint"
-msgstr "This angel type requires the attendance at an introduction meeting. "
+msgstr "This team requires the attendance at an introduction meeting. "
 "You might find additional information in the description."
 
 msgid "angeltypes.can-change-later"
 msgstr "You can change your selection later in the settings."
 
 msgid "angeltypes.shift.self_signup.info"
-msgstr "Angel types which have shift self signup enabled allow angels to self sign up for their shifts, "
-"if shift self signup is disabled only supporters and admins can sign angels into shifts of these angel types."
+msgstr "Teams which have shift self signup enabled allow angels to self sign up for their shifts, "
+"if shift self signup is disabled only supporters and admins can sign angels into shifts of these teams."
 
 msgid "shift.self_signup"
 msgstr "Shift self signup"
@@ -748,8 +748,8 @@ msgid "angeltypes.hide_on_shift_view"
 msgstr "Hide on shift view"
 
 msgid "angeltypes.hide_on_shift_view.info"
-msgstr "If checked only admins and members of the angel type "
-"can see the filter option for this angel type on the shifts page"
+msgstr "If checked only admins and members of the team "
+"can see the filter option for this team on the shifts page"
 
 msgid "location.location"
 msgstr "Location"
@@ -1052,7 +1052,7 @@ msgid "admin_shifts.no_shifttypes"
 msgstr "No shift type has been created yet. Shifts can't be created without one."
 
 msgid "admin_shifts.no_angeltypes"
-msgstr "No angel type has been created yet. Shifts can't be created without one."
+msgstr "No team has been created yet. Shifts can't be created without one."
 
 msgid "shift.sign_out.hint"
 msgstr "You can self sign out up to %s hours before the start of the shift. "
