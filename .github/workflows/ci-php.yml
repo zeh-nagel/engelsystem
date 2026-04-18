@@ -1,0 +1,112 @@
+name: PHP
+
+on:
+  push:
+    branches: [integration]
+  pull_request:
+    branches: [integration]
+
+concurrency:
+  group: php-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  composer-validate:
+    name: Composer Validate & Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          tools: composer:v2
+          coverage: none
+      - run: composer validate --strict
+      - run: composer audit --locked
+
+  code-quality:
+    name: Code Quality (phpcs + phpstan)
+    runs-on: ubuntu-latest
+    needs: composer-validate
+    steps:
+      - uses: actions/checkout@v6
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: intl, mbstring, pdo
+          tools: composer:v2
+          coverage: none
+      - uses: actions/cache@v5
+        with:
+          path: vendor/
+          key: composer-${{ hashFiles('composer.lock') }}
+          restore-keys: composer-
+      - run: composer install --no-ansi --no-progress
+      - run: ./vendor/bin/phpcs -p --no-colors --basepath="$PWD"
+      - run: ./vendor/bin/phpstan --no-progress
+
+  test:
+    name: PHPUnit Tests
+    runs-on: ubuntu-latest
+    needs: composer-validate
+    services:
+      mariadb:
+        image: mariadb:10.7
+        env:
+          MYSQL_DATABASE: engelsystem
+          MYSQL_USER: engel
+          MYSQL_PASSWORD: engelsystem
+          MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+          MYSQL_INITDB_SKIP_TZINFO: 'yes'
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+    env:
+      MYSQL_DATABASE: engelsystem
+      MYSQL_USER: engel
+      MYSQL_PASSWORD: engelsystem
+      MYSQL_HOST: 127.0.0.1
+    steps:
+      - uses: actions/checkout@v6
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: intl, mbstring, pdo, pdo_mysql, pcov
+          tools: composer:v2
+          coverage: pcov
+      - uses: actions/cache@v5
+        with:
+          path: vendor/
+          key: composer-${{ hashFiles('composer.lock') }}
+          restore-keys: composer-
+      - run: composer install --no-ansi --no-progress
+      - name: Run migrations
+        run: ./bin/migrate
+      - name: Run tests
+        run: >-
+          php -d memory_limit=-1 -d pcov.enabled=1 -d pcov.directory=. vendor/bin/phpunit
+          --colors=never
+          --coverage-text
+          --coverage-html coverage/
+          --log-junit unittests.xml
+      - name: Rollback migrations
+        if: always()
+        run: ./bin/migrate down
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: coverage
+          path: coverage/
+          retention-days: 7
+      - name: Upload test results
+        uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: unittests
+          path: unittests.xml
+          retention-days: 7

@@ -1,0 +1,26 @@
+name: Translations
+
+on:
+  push:
+    branches: [integration]
+  pull_request:
+    branches: [integration]
+
+concurrency:
+  group: translations-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Translations Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: sudo apt-get install -y --no-install-recommends gettext
+      - name: Compile .po files
+        run: find resources/lang -type f -name '*.po' -exec sh -c 'msgfmt "${1%.*}.po" -o"${1%.*}.mo"' shell {} \;
+      - name: Verify all .po files compiled
+        run: |
+          PO=$(find resources/lang -type f -name "*.po" | wc -l)
+          MO=$(find resources/lang -type f -name "*.mo" | wc -l)
+          [[ "$PO" == "$MO" ]]
