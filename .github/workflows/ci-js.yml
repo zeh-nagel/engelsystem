@@ -1,0 +1,60 @@
+name: JS
+
+on:
+  push:
+    branches: [integration]
+  pull_request:
+    branches: [integration]
+
+concurrency:
+  group: js-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  yarn-validate:
+    name: Yarn Validate & Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn global add package-json-validator-cli
+      - run: package-json-validator-cli
+      - run: yarn audit
+
+  yarn-check:
+    name: Yarn Check
+    runs-on: ubuntu-latest
+    needs: yarn-validate
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn check
+
+  lint:
+    name: Lint (Biome)
+    runs-on: ubuntu-latest
+    needs: yarn-validate
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+
+  editorconfig:
+    name: EditorConfig Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: npm install -g editorconfig-checker
+      - run: ec -v
